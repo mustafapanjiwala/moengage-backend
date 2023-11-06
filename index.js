@@ -13,7 +13,7 @@ app.get("/", cors(), (req, res) => {
   res.send("Hello World!");
 });
 
-app.post("/", async (req, res) => {
+app.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
   try {
